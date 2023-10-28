@@ -1,12 +1,12 @@
 import React from 'react'
 import {client} from '../lib/client'
-import { AllProducts } from '../components'
+import { ProductImage } from '../components'
 
 const male = ({AllMaleProducts}) => {
     return (
         <div className='Allproducts-container'>
             {AllMaleProducts?.map(prod => (
-                <AllProducts key={prod._id} allproducts={prod} />
+                <ProductImage key={prod._id} product={prod} />
             ))}
         </div>
       )
