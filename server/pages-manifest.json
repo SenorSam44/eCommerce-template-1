@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/stripe": "pages/api/stripe.js",
+  "/cart": "pages/cart.html",
+  "/successPay": "pages/successPay.html",
+  "/female": "pages/female.js",
+  "/kids": "pages/kids.js",
+  "/": "pages/index.js",
+  "/male": "pages/male.js",
+  "/products": "pages/products.js",
+  "/product/[slug]": "pages/product/[slug].js",
+  "/404": "pages/404.html"
+}
