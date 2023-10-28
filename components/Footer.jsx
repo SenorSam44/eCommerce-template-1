@@ -7,16 +7,6 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer'>
-        <div className='logo'>
-          <Image src={logo} width={180} height={30} alt='logo' />
-          <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
-          <div className='icon-container'>
-            <div><GrTwitter size={20} /></div>
-            <div><GrFacebookOption size={20} /></div>
-            <div><GrLinkedinOption size={20} /></div>
-          </div>
-        </div>
-
         <div className='footer-links'>
           <h3>Company</h3>
           <ul>
@@ -44,6 +34,17 @@ const Footer = () => {
             <li>Support 24h</li>
           </ul>
         </div>
+
+        <div className='logo'>
+          <Image src={logo} width={180} height={30} alt='logo' />
+          <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
+          <div className='icon-container'>
+            <div><GrTwitter size={20} /></div>
+            <div><GrFacebookOption size={20} /></div>
+            <div><GrLinkedinOption size={20} /></div>
+          </div>
+        </div>
+
       </div>
 
       <div className='copyright'>
