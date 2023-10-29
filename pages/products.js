@@ -1,12 +1,11 @@
 import React from 'react'
 import {client} from '../lib/client'
-import { AllProducts } from '../components'
 
-const products = ({Allproducts}) => {
+const products = ({ProductImage}) => {
     return (
         <div className='Allproducts-container'>
-            {Allproducts?.map(prod => (
-                <AllProducts key={prod._id} allproducts={prod} />
+            {ProductImage?.map(prod => (
+                <ProductImage key={prod._id} allproducts={prod} />
             ))}
         </div>
       )
@@ -14,10 +13,10 @@ const products = ({Allproducts}) => {
 
 export const getServerSideProps = async () => {
     const query = '*[_type == "product"]';
-    const Allproducts = await client.fetch(query);
+    const ProductImage = await client.fetch(query);
   
     return {
-      props: { Allproducts }
+      props: { ProductImage }
     }
 }
 
